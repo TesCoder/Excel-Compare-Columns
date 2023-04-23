@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # This program compares two excel documents and outputs a third document that indicates
-# matched first & second column values and their locations, as well as unmatched values and their locations.
+# matched first & second column values and their file locations, as well as unmatched values and their file locations.
 
 from openpyxl import *
 from tkinter.filedialog import askopenfilename
