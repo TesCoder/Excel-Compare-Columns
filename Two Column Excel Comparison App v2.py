@@ -157,8 +157,7 @@ def OpenFile() -> object:
     # file1 = askopenfilename(initialdir="C:/Users/Grant/Documents/Text/",
     #                         filetypes=(("All Files", "*.*"), ("All Files", "*.*")), title="Select a file (modded).")
 
-    # file1 = input("enter file1 path: ")
-    file1 = '/Users/jamessteward/Desktop/Excel-Compare-Columns-main/file1.xlsx'
+    file1 = input("enter file1 path: ")
     print("file1 is: ", file1)
 
     if ".xlsx" not in file1 and file1 != "":
@@ -182,8 +181,7 @@ def OpenFile2() -> object:
     # file2 = askopenfilename(initialdir="C:/Users/Grant/Documents/Text/",
     #                         filetypes=(("All Files", "*.*"), ("All Files", "*.*")), title="Select a file (modded).")
 
-    #file2 = input("enter file 2 path: ")
-    file2 = '/Users/jamessteward/Desktop/Excel-Compare-Columns-main/file2.xlsx'
+    file2 = input("enter file 2 path: ")
     print("file2 is: ", file2)
     
     if ".xlsx" not in file2 and file2 != "":
