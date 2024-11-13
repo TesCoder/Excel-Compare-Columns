@@ -6,9 +6,10 @@ from openpyxl import *
 from tkinter.filedialog import askopenfilename
 from tkinter import *
 from tkinter import messagebox
+from tkinter import filedialog
 import time
-root = Tk()
 
+root = Tk()
 root.geometry('604x360+400+200')
 root.title("Excel Comparison")
 
@@ -123,8 +124,8 @@ C = Compare()
 
 
 def OpenFile() -> object:
-    file1 = askopenfilename(initialdir="C:/Users/Grant/Documents/Text/",
-                            filetypes=(("All Files", "*.*"), ("All Files", "*.*")), title="Select a file (modded).")
+    file1 = filedialog.askopenfilename()
+
     print("file1 is: ", file1)
 
     if ".xlsx" not in file1 and file1 != "":
@@ -144,8 +145,7 @@ frame3.grid(row=0, column=1, rowspan=1, columnspan=50, sticky='w')
 
 
 def OpenFile2() -> object:
-    file2 = askopenfilename(initialdir="C:/Users/Grant/Documents/Text/",
-                            filetypes=(("All Files", "*.*"), ("All Files", "*.*")), title="Select a file (modded).")
+    file2 = filedialog.askopenfilename()
 
     print("file2 is: ", file2)
     
